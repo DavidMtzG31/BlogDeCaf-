@@ -26,8 +26,9 @@ body{
 /** Globales **/
 
 .contenedor{
-    max-width: 120rem;
-    width: 90%;
+    /*max-width: 120rem;
+    width: 90%;*/
+    width: min(90%, 120rem);
     margin: 0 auto;
 
 }
@@ -100,7 +101,9 @@ img{
     }
  }
 
-
+.barra{
+    padding-top: 3rem;
+}
 @media (min-width: 768px){
    .barra{
     display: flex;
@@ -204,4 +207,10 @@ li{
 .widget-curso__label,
 .widget-curso__info{
     font-size: 2rem;
+}
+
+.footer{
+    background-color: var(--negro);
+    padding: 1.5rem;
+    margin-top: 4rem;
 }
