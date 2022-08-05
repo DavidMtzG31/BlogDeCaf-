@@ -236,3 +236,19 @@ li{
    
 } */
 
+/* Cursos */
+@media (min-width: 768px){
+   .curso{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    }
+}
+
+.curso__label{
+    font-weight: bold;
+}
+
+.curso__info{
+    font-weight: normal;
+}
