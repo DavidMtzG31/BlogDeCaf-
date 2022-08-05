@@ -240,15 +240,32 @@ li{
 @media (min-width: 768px){
    .curso{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
     }
 }
 
+.curso{
+    padding: 3rem;
+    border-bottom: 1px solid var(--gris);
+    }
+
+.curso:last-of-type{
+    border: none;
+}
+
+/* estas configuraciones ya están más arriba, lo ideal sería solo añadir la clase arriba
+donde están esas configuraciones*/
 .curso__label{
+    font-family: var(--fuenteHeading);
     font-weight: bold;
 }
 
 .curso__info{
     font-weight: normal;
+}
+
+.curso__label,
+.curso__info{
+    font-size: 2rem;
 }
